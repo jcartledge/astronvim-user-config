@@ -9,7 +9,7 @@ return {
   },
   g = {
     mapleader = " ",
-    autoformat_enabled = true,
+    autoformat_enabled = false,
     cmp_enabled = true,
     autopairs_enabled = true,
     diagnostics_mode = 3,
