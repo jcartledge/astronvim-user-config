@@ -3,6 +3,7 @@
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
+
 return {
   -- first key is the mode
   n = {
@@ -17,9 +18,14 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader> "] = {"za", desc = "Toggle fold under cursor"},
+
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+
+    -- Jump to test
+    ["gt"] = {":e %:r.test.%:e<cr>", desc = "Jump to test"},
 
     -- UI
     ["<leader>um"] = {"<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle markdown preview"},
@@ -28,7 +34,7 @@ return {
     -- ergonomics
     ["U"] = { "<c-r>", desc = "Redo" },
     ["Y"] = { "yy", desc = "Yank line" },
-    ["<tab>"] = {"<cmd>b#<cr>", desc = "Switch to alt buffer"},
+    ["<tab>"] = {":e #<cr>", desc = "Switch to alt buffer"},
 
     -- brackets stuff
     ["[ "] = { "O<esc>", desc = "Insert empty line before" },
