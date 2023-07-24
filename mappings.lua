@@ -20,10 +20,15 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
-    -- quick save
-    -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+
+    -- UI
+    ["<leader>um"] = {"<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle markdown preview"},
+
+    -- top-level
+    -- ergonomics
     ["U"] = { "<c-r>", desc = "Redo" },
     ["Y"] = { "yy", desc = "Yank line" },
+    ["<tab>"] = {"<cmd>b#<cr>", desc = "Switch to alt buffer"},
 
     -- brackets stuff
     ["[ "] = { "O<esc>", desc = "Insert empty line before" },
