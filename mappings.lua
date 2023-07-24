@@ -26,8 +26,8 @@ return {
     ["Y"] = { "yy", desc = "Yank line" },
 
     -- brackets stuff
-    ["[ "] = { "O", desc = "Insert empty line before" },
-    ["] "] = { "o", desc = "Insert empty line after" },
+    ["[ "] = { "O<esc>", desc = "Insert empty line before" },
+    ["] "] = { "o<esc>", desc = "Insert empty line after" },
   },
   t = {
     -- setting a mapping to false will disable it
