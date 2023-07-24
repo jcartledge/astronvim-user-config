@@ -3,6 +3,7 @@
 -- Please use this mappings table to set keyboard mapping since this is the
 -- lower level configuration and more robust one. (which-key will
 -- automatically pick-up stored data by this setting.)
+
 return {
   -- first key is the mode
   n = {
@@ -22,6 +23,9 @@ return {
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
+
+    -- Jump to test
+    ["gt"] = {":e %:r.test.%:e<cr>", desc = "Jump to test"},
 
     -- UI
     ["<leader>um"] = {"<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle markdown preview"},
