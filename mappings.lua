@@ -17,6 +17,8 @@ return {
       end,
       desc = "Pick to close",
     },
+    ["<leader> "] = {"za", desc = "Toggle fold under cursor"},
+
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
@@ -28,7 +30,7 @@ return {
     -- ergonomics
     ["U"] = { "<c-r>", desc = "Redo" },
     ["Y"] = { "yy", desc = "Yank line" },
-    ["<tab>"] = {"<cmd>b#<cr>", desc = "Switch to alt buffer"},
+    ["<tab>"] = {":e #<cr>", desc = "Switch to alt buffer"},
 
     -- brackets stuff
     ["[ "] = { "O<esc>", desc = "Insert empty line before" },
