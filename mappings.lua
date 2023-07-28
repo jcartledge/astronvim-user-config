@@ -34,7 +34,7 @@ return {
     -- ergonomics
     ["U"] = { "<c-r>", desc = "Redo" },
     ["Y"] = { "yy", desc = "Yank line" },
-    ["<tab>"] = {":e #<cr>", desc = "Switch to alt buffer"},
+    ["<tab>"] = {"<c-^>", desc = "Switch to alt buffer"},
 
     -- brackets stuff
     ["[ "] = { "O<esc>j", desc = "Insert empty line before" },
