@@ -1,12 +1,5 @@
 return {
-  -- You can also add new plugins here as well:
-  -- Add plugins, the lazy syntax
-  -- "andweeb/presence.nvim",
-  -- {
-  --   "ray-x/lsp_signature.nvim",
-  --   event = "BufRead",
-  --   config = function()
-  --     require("lsp_signature").setup()
-  --   end,
-  -- },
+  { "djoshea/vim-autoread", event = "User AstroFile" },
+  { "gcmt/wildfire.vim", event = "User AstroFile" },
+  { "jeffkreeftmeijer/vim-numbertoggle", event = "User AstroFile" },
 }
