@@ -30,6 +30,7 @@ return {
     -- UI
     ["<leader>um"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle markdown preview" },
     ["<leader>="] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
+    ["<leader>y"] = { "ggYG<c-o>", desc = "Yank buffer" },
 
     -- top-level
     -- ergonomics
