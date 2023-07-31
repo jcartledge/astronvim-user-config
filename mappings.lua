@@ -37,8 +37,8 @@ return {
     ["<tab>"] = {"<c-^>", desc = "Switch to alt buffer"},
 
     -- brackets stuff
-    ["[ "] = { "O<esc>j", desc = "Insert empty line before" },
-    ["] "] = { "o<esc>k", desc = "Insert empty line after" },
+    ["[ "] = { "m`O<esc>``", desc = "Insert empty line before" },
+    ["] "] = { "m`o<esc>``", desc = "Insert empty line after" },
   },
   t = {
     -- setting a mapping to false will disable it
