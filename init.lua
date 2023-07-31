@@ -10,7 +10,7 @@ return {
     remotes = {},
   },
 
-  colorscheme = "nord",
+  colorscheme = "nordfox",
 
   diagnostics = {
     virtual_text = true,
