@@ -18,23 +18,24 @@ return {
       end,
       desc = "Pick to close",
     },
-    ["<leader> "] = {"za", desc = "Toggle fold under cursor"},
+    ["<leader> "] = { "za", desc = "Toggle fold under cursor" },
 
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
     ["<leader>b"] = { name = "Buffers" },
 
     -- Jump to test
-    ["gt"] = {":e %:r.test.%:e<cr>", desc = "Jump to test"},
+    ["gt"] = { ":e %:r.test.%:e<cr>", desc = "Jump to test" },
 
     -- UI
-    ["<leader>um"] = {"<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle markdown preview"},
+    ["<leader>um"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle markdown preview" },
+    ["<leader>="] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
 
     -- top-level
     -- ergonomics
     ["U"] = { "<c-r>", desc = "Redo" },
     ["Y"] = { "yy", desc = "Yank line" },
-    ["<tab>"] = {"<c-^>", desc = "Switch to alt buffer"},
+    ["<tab>"] = { "<c-^>", desc = "Switch to alt buffer" },
 
     -- brackets stuff
     ["[ "] = { "m`O<esc>``", desc = "Insert empty line before" },
