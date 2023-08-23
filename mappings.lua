@@ -10,13 +10,8 @@ return {
       desc = "Pick to close",
     },
 
-    -- tables with the `name` key will be registered with which-key if it's installed
-    -- this is useful for naming menus
-    ["<leader>b"] = { name = "Buffers" },
-
     -- single key mappings
     ["U"] = { "<c-r>", desc = "Redo" },
-    ["Y"] = { "yy", desc = "Yank line" },
     ["<tab>"] = { "<c-^>", desc = "Switch to alt buffer" },
     --
     -- go mappings
