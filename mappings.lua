@@ -20,20 +20,20 @@ return {
     ["<tab>"] = { "<c-^>", desc = "Switch to alt buffer" },
     --
     -- go mappings
-    ["gt"] = { ":e %:r.test.%:e<cr>", desc = "Jump to test" },
+    ["gt"] = { ":e %:r.test.%:e<cr>", desc = "Go to test" },
+    ["gj"] = { ":exe 'e ~/notes/journal/'.strftime('%F').'.md'<cr>", desc = "Go to journal" },
 
     -- leader mappings
-    ["<leader>um"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle markdown preview" },
+    ["<leader> "] = { "za", desc = "Toggle fold under cursor" },
     ["<leader>="] = { "<cmd>lua vim.lsp.buf.format()<cr>", desc = "Format buffer" },
+    ["<leader>F"] = { "<leader>fo", desc = "Find recent" },
+    ["<leader>um"] = { "<cmd>MarkdownPreviewToggle<cr>", desc = "Toggle markdown preview" },
     ["<leader>v"] = { "ggVG", desc = "Visual select buffer" },
     ["<leader>y"] = { "ggyG<c-o>", desc = "Yank buffer" },
-    ["<leader>F"] = { "<leader>fo", desc = "Find recent" },
-    ["<leader> "] = { "za", desc = "Toggle fold under cursor" },
 
     -- brackets mappings
     ["[ "] = { "m`O<esc>``", desc = "Insert empty line before" },
     ["] "] = { "m`o<esc>``", desc = "Insert empty line after" },
   },
-  t = {
-  },
+  t = {},
 }
