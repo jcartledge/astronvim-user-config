@@ -1,4 +1,5 @@
 return {
+  { "dkarter/bullets.vim", event = "User AstroFile" },
   { "djoshea/vim-autoread", event = "User AstroFile" },
   { "fcpg/vim-waikiki", lazy = false },
   { "folke/trouble.nvim", opts = { auto_open = true, auto_close = true } },
