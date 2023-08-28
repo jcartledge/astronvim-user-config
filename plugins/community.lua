@@ -1,5 +1,6 @@
 return {
   "AstroNvim/astrocommunity",
+  { import = "astrocommunity.bars-and-lines.heirline-vscode-winbar" },
   { import = "astrocommunity.colorscheme.nightfox-nvim" },
   { import = "astrocommunity.diagnostics.trouble-nvim" },
   { import = "astrocommunity.editing-support.auto-save-nvim" },

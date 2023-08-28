@@ -21,7 +21,7 @@ return {
     --
     -- go mappings
     ["gt"] = { ":e %:r.test.%:e<cr>", desc = "Go to test" },
-    ["gj"] = { ":exe 'e ~/notes/journal/'.strftime('%F').'.md'<cr>", desc = "Go to journal" },
+    ["gj"] = { ":exe 'e ~/notes/journals/'.strftime('%F').'.md'<cr>", desc = "Go to journal" },
 
     -- leader mappings
     ["<leader> "] = { "za", desc = "Toggle fold under cursor" },
