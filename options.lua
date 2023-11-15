@@ -6,6 +6,8 @@ return {
     spell = false,
     signcolumn = "auto",
     wrap = true,
+    list = true,
+    listchars = { tab = "󰌒 ", trail = "󱁐" },
   },
   g = {
     autoformat_enabled = false,
@@ -19,6 +21,6 @@ return {
     resession_enabled = false,
     ui_notifications_enabled = true,
     waikiki_default_maps = 1,
-    waikiki_roots = {"~/notes/"},
+    waikiki_roots = { "~/notes/" },
   },
 }

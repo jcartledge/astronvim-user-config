@@ -12,5 +12,4 @@ return {
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.register.nvim-neoclip-lua" },
-  { import = "astrocommunity.terminal-integration.vim-tmux-yank" },
 }
