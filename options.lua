@@ -7,7 +7,7 @@ return {
     signcolumn = "auto",
     wrap = true,
     list = true,
-    listchars = { tab = "󰌒 ", trail = "󱁐" },
+    listchars = { trail = "•", tab = "󰌒 " },
   },
   g = {
     autoformat_enabled = false,
