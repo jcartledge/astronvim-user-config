@@ -20,7 +20,5 @@ return {
     maplocalleader = ",",
     resession_enabled = false,
     ui_notifications_enabled = true,
-    waikiki_default_maps = 1,
-    waikiki_roots = { "~/notes/" },
   },
 }
